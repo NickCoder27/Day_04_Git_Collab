@@ -17,9 +17,7 @@ only expected to complete one PART below. Do not worry if your group
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
 """"
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+
 
 
 # PART 1
@@ -61,8 +59,28 @@ import matplotlib.pyplot as plt
 
 
 # PART 7
-#Using the Superior and Ontario Datasets, plot the Superior Water 
+# Using the Superior and Ontario Datasets, plot the Superior Water 
 # Level vs Ontario Water Level to see if there is any correlation 
 # between the water levels.
+
+# +
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+Superior = pd.read_csv('sup.csv')
+
+Ontario = pd.read_csv('ont.csv')
+
+Superior.head()
+# -
+
+Ontario = Ontario.dropna()
+Ontario.head()
+
+plt.scatter(Superior['lake levels'], Ontario['Lake Ontario annual averages'])
+plt.xlabel('Lake Superior Water Level')
+plt.ylabel('Lake Ontario Water Level')
+plt.title('Lake Superior vs Lake Ontario Water Levels')
 
 

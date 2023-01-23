@@ -1,4 +1,5 @@
 time,lake average
+work for the love of god
 1860,177.3351667
 1861,177.3318333
 1862,177.316

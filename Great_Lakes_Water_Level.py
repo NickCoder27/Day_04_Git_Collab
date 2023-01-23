@@ -1,4 +1,10 @@
+
+
+
 """"
+So very confusing, please work
+
+So confusing
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
 * mhu.csv -- Lake Michigan and Lake Huron

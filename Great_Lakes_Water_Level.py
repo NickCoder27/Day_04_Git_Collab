@@ -25,8 +25,7 @@ import matplotlib.pyplot as plt
 # PART 1
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
-mich_huron = pd.read_csv('eri.csv')
-mich_huron
+
 
 
 # PART 2
@@ -38,7 +37,11 @@ mich_huron
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
-
+erie = pd.read_csv('eri.csv')
+plt.plot(erie['time'],erie['water level'])
+plt.title('Lake Erie Water Level')
+plt.xlabel('Year')
+plt.ylabel('Water Level')
 
 
 # PART 4

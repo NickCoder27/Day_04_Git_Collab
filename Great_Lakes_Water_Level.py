@@ -1,7 +1,7 @@
 
 
 
-""""
+"""
 So very confusing, please work
 
 So confusing
@@ -15,8 +15,9 @@ files, which you shoujld have downloaded:
 As instructed in the in-class activity notebook for today, you are 
 only expected to complete one PART below. Do not worry if your group 
 is not big enough to finish all parts below, but if you have extra 
-time, you're welcome to do so.
-""""
+"""
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -37,6 +38,9 @@ import matplotlib.pyplot as plt
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
+
+plt.plot(erie.csv[2], erie.csv[1])
+plt.show()
 
 
 

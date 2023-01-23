@@ -33,7 +33,17 @@ import matplotlib.pyplot as plt
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
 
+# +
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+ds = pd.read_csv("sup.csv")
 
+wtr_lvl = ds['lake levels']
+year = ds['year']
+
+plt.plot(wtr_lvl,year)
+# -
 
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
@@ -65,7 +75,7 @@ plt.show()
 
 
 # PART 7
-#Using the Superior and Ontario Datasets, plot the Superior Water 
+# Using the Superior and Ontario Datasets, plot the Superior Water 
 # Level vs Ontario Water Level to see if there is any correlation 
 # between the water levels.
 
